@@ -1,11 +1,6 @@
 #ReOS version
-export RE_VERSION := 1.0.0
+export RE_VERSION := 1.0.0-BETA
 export RE_MINOR_VERSION:= 000
-    
-ifeq ($(TARGET_DEVICE),shamu)
-PRODUCT_PROPERTY_OVERRIDES += \
-	RE_MINOR_VERSION := 001
-endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.re.version=$(RE_VERSION) \
