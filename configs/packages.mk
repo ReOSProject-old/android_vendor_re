@@ -21,3 +21,7 @@ PRODUCT_PACKAGES += \
     	CellBroadcastReceiver \
     	LauncherLayout \
 	    ReWallpapers
+
+# Boot animation
+PRODUCT_COPY_FILES += \
+    vendor/re/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
