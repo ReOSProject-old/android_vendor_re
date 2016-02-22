@@ -21,7 +21,8 @@ PRODUCT_PACKAGES += \
     	CellBroadcastReceiver \
     	LauncherLayout \
     	ReBriefingWidget \
-	ReWallpapers
+	ReWallpapers \
+	Stk
 
 # Boot animation
 PRODUCT_COPY_FILES += \
