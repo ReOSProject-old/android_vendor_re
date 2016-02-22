@@ -20,7 +20,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     	CellBroadcastReceiver \
     	LauncherLayout \
-	    ReWallpapers
+    	ReBriefingWidget \
+	ReWallpapers
 
 # Boot animation
 PRODUCT_COPY_FILES += \
