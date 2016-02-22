@@ -2,6 +2,22 @@
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/re/overlay/common
 
+# NTFS support
+PRODUCT_PACKAGES += \
+    mkfs.ntfs \
+    fsck.ntfs \
+    mount.ntfs \
+
+# exfat support
+WITH_EXFAT ?= true
+ifeq ($(WITH_EXFAT),true)
+TARGET_USES_EXFAT := true
+PRODUCT_PACKAGES += \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat
+endif
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/re/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
